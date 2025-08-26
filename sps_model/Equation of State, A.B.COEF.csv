@@ -1,0 +1,10 @@
+,FLUID,DRA,A,B,N
+,n/a,n/a,n/a,n/a,n/a
+Equation of State,HVY-NOPAINT,HEAVY,400,80,0.35
+Equation of State,HVY-NOPAINT,LIGHT,400,80,0.35
+Equation of State,HVY-PAINT,HEAVY,400,80,0.35
+Equation of State,HVY-PAINT,LIGHT,400,80,0.35
+Equation of State,LGT-NOPAINT,HEAVY,400,80,0.35
+Equation of State,LGT-NOPAINT,LIGHT,400,80,0.35
+Equation of State,LGT-PAINT,HEAVY,400,80,0.35
+Equation of State,LGT-PAINT,LIGHT,400,80,0.35

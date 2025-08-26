@@ -1,0 +1,614 @@
+,CAN_DEFAULT,DEFAULT,DESCRIPTION,FORMAT,HI,HI-HI,LOW,LOW-LOW,UNIT_KEY,UNITS
+,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+A * A1,Yes,324,First rate coefficient,2,1000,1000,0.01,0.01,NONE,
+A * A2,Yes,36,Second rate coefficient,2,1e+06,1e+06,0,0,NONE,
+A * A3,Yes,1,Third rate coefficient,2,1e+06,1e+06,0,0,NONE,
+A * TCLOSE,Yes,1,Actuator closing time,2,10,10,0.01,0.01,TIME,MIN
+A * TOPEN,Yes,1,Actuator opening time,2,10,10,0.01,0.01,TIME,MIN
+A * V0,Yes,0,Input limit where X(V0) = 0,2,1e+06,1e+06,0,0,NONE,
+A * V1,Yes,1,Input limit where X(V1) = 1,2,1e+06,1e+06,0,0,NONE,
+A * VR,Yes,4,Rate constant,2,1000,1000,0.01,0.01,NONE,
+B * CVC,Yes,0,Valve coef when fully closed,2,29.167,145.835,0,0,VALVE.COEFF,GAL/MIN-PSI.5
+B * CVO,No,0,Valve coef when fully open,2,875010,8.7501e+06,875.01,0,VALVE.COEFF,GAL/MIN-PSI.5
+B * DP,Yes,0,Pressure drop used to size optional series header,2,34.4737,137.895,0.689473,0,DELTA.PRES,KPA
+B * DRA_DEG,Yes,100,Amount of DRA destroyed at high pressure drop,2,100,100,0,0,DEGRADATION,PERCENT
+B * FR,Yes,0,Initial valve fraction,2,1,1,0,0,FRACTION,FR
+B * Q,Yes,0,Flow used to size optional series header,2,7949.36,13248.9,79.4936,0,FLOW,M3/HR
+B * T,Yes,1,Travel time,2,16,20,0,0,TIME,MIN
+BC * CVC,Yes,0,Valve coef when fully closed,2,29.167,145.835,0,0,VALVE.COEFF,GAL/MIN-PSI.5
+BC * CVO,No,0,Valve coef when fully open,2,875010,8.7501e+06,875.01,0,VALVE.COEFF,GAL/MIN-PSI.5
+BC * DP,Yes,0,Pressure drop used to size optional series header,2,34.4737,137.895,0.689473,0,DELTA.PRES,KPA
+BC * DRA_DEG,Yes,100,Amount of DRA destroyed at high pressure drop,2,100,100,0,0,DEGRADATION,PERCENT
+BC * FR,Yes,0,Initial valve fraction,2,1,1,0,0,FRACTION,FR
+BC * Q,Yes,0,Flow used to size optional series header,2,7949.36,13248.9,79.4936,0,FLOW,M3/HR
+BC * T,Yes,0,Travel time,2,3,20,0,0,TIME,MIN
+BV * CGC,Yes,0,Valve coef when fully closed,2,0.410687,2.05343,0,0,VALVE.CG,M3/HR-KPA
+BV * CGO,No,0,Valve coef when fully open,2,12320.6,123206,123.206,0,VALVE.CG,M3/HR-KPA
+BV * DP,Yes,0,Pressure drop used to size optional series header,2,34.4737,137.895,0.689473,0,DELTA.PRES,KPA
+BV * DRA_DEG,Yes,100,Amount of DRA destroyed at high pressure drop,2,100,100,0,0,DEGRADATION,PERCENT
+BV * FR,Yes,0,Initial valve fraction,2,1,1,0,0,FRACTION,FR
+BV * Q,Yes,0,Flow used to size optional series header,2,7949.36,13248.9,79.4936,0,FLOW,M3/HR
+BV * TT,Yes,1,Travel time,2,3,20,0,0,TIME,MIN
+CA * DEFAULT,Yes,0,Default value used when the custom attribute is not set on the device.(String-valued attributes are quoted to distinguish them from numeric-valued expressions.),2,1e+20,1e+20,-1e+20,-1e+20,NONE,
+CC * DLOSS,Yes,0.025,Fraction of power lost to inlet and outlet ducting,2,0.5,0.5,0,0,EFFICIENCY,FR
+CC * ELEV,Yes,0,Elevation of the compressor,2,2377.44,3048,0,-76.2,ELEVATION,M
+CC * HEC,Yes,1,Multiplier of table hydraulic efficiency values,2,0.99,1.1,0.6,0.5,NONE,
+CC * HR,Yes,0,Constant heat rate,2,28297.1,42445.6,0,0,HEAT.RATE,KJ/KW-HR
+CC * ME,Yes,0.97,The mechanical efficiency,2,0.99,1.1,0.6,0.5,EFFICIENCY,FR
+CC * MXT+,Yes,260,High discharge temperature trip,2,315.556,371.111,15.5556,4.44444,TEMPERATURE,DC
+CC * MXTE,Yes,5.55556e+21,Maximum power turbine exhaust temperature,2,5.55556e+21,5.55556e+21,-17.7778,-17.7778,TEMPERATURE,DC
+CC * NPOLY,Yes,1.3,Polytropic exponent,2,1.6,5,1.1,1.0001,NONE,
+CC * NRN,Yes,1,Number of identical running compressors,2,10,20,0,0,NONE,
+CC * PDMAX,Yes,0,Discharge pressure setpoint,2,13789.5,689473,9652.63,2068.42,PRESSURE,KPAG
+CC * PSMIN,Yes,0,Suction pressure set point,2,5515.79,6894.73,2068.42,0,PRESSURE,KPAG
+CC * PWMAX,Yes,74570,Maximum permissible turbine power under any conditions,2,18642.5,37285,74.57,0,POWER,KW
+CC * SMAX,Yes,1e+22,Compressor maximum speed,2,1e+22,1e+22,0,0,SPEED,RPM
+CC * SMIN,Yes,0,Compressor minimum speed,2,1e+22,1e+22,0,0,SPEED,RPM
+CC * SQ,Yes,0,Flow set point,2,1.17987e+06,1.7698e+06,0,0,FLOW,M3/HR
+CC * SS,Yes,0,Controlled compressor speed,2,1e+22,1e+22,0,0,SPEED,RPM
+CC * START,Yes,3,Start time,2,10,30,0.4,0.25,TIME,MIN
+CC * STOP,Yes,3,Stop time,2,10,30,0.4,0.25,TIME,MIN
+CC * TA,Yes,21.1111,Ambient temperature,2,5.55556e+21,5.55556e+21,-17.7778,-17.7778,TEMPERATURE,DC
+CC * TR,Yes,15,Reference temperature,2,5.55556e+21,5.55556e+21,-17.7778,-17.7778,TEMPERATURE,DC
+CC * TRR,Yes,1.3,Temperature rise ratio,2,1.6,5,1.1,1.0001,NONE,
+CO * ASTMA,Yes,18,ASTM Visc Coef A,2,10000,10000,0.001,0.001,NONE,
+CO * ASTMB,Yes,7,ASTM Visc Coef B,2,10000,10000,0.001,0.001,NONE,
+CO * BM,Yes,1.86158e+06,Bulk modulus,2,2.06842e+07,3.44737e+07,206842,68947.3,BULK.MOD,KPA
+CO * D0,Yes,999.552,Density,2,1281.48,1601.85,640.739,320.369,DENSITY,KG/M3
+CO * FR,Yes,0,Fluid/component fraction to inject at connection external,2,1,1,0,0,NONE,
+CO * INT,Yes,0,"Interpolation parameter for repair of ""bad"" fmv's",2,1e+22,1e+22,-1e+22,-1e+22,NONE,
+CO * P,Yes,689.473,Pressure at which following properties are measured,2,6894.73,13789.5,344.737,0,PRESSURE,KPAG
+CO * PP,Yes,9.5,Multiplier for the delta P squared term,2,1000,1000,0,0,NONE,
+CO * PT,Yes,-9.7,Multiplier for the delta P delta T term,2,1000,1000,-1000,-1000,NONE,
+CO * SVL,Yes,5000,Sonic velocity,2,10000,50000,1000,100,NONE,
+CO * T,Yes,15.5556,Temperature at which following properties are measured,2,37.7778,93.3333,-1.11111,-17.7778,TEMPERATURE,DC
+CO * TM,Yes,-1611.11,Temperature modulus,2,-555.556,-277.778,-5555.56,-27777.8,DELTA.TEMP,DC
+CO * V0,Yes,1.2,Viscosity,2,500,1000,0.1,0.01,VISCOSITY,CP
+CO * VPMI,Yes,0,Pressure coefficient of viscosity,2,0.0145038,0.145038,-0.0145038,-0.145038,INVERSEDELTAP,1/KPA
+CO * VTMI,Yes,-0.027,Temperature coefficient of viscosity,2,0,0,-1.8,-18,INVERSEDELTAT,1/DC
+CUSTODY * PREF,Yes,101.325,Custody transfer pressure,3,137.895,344.737,68.9473,34.4737,ABSOLUTE.PRESSURE,KPAA
+CUSTODY * TREF,Yes,15.5556,Custody transfer temperature,2,26.6667,37.7778,10,4.44444,TEMPERATURE,DC
+CV * CGC,Yes,0,Valve coef when fully closed,2,0.410687,2.05343,0,0,VALVE.CG,M3/HR-KPA
+CV * CGO,No,0,Valve coef when fully open,2,12320.6,123206,123.206,0,VALVE.CG,M3/HR-KPA
+CV * DP,Yes,0,Pressure drop used to size optional series header,2,34.4737,137.895,0.689473,0,DELTA.PRES,KPA
+CV * DRA_DEG,Yes,100,Amount of DRA destroyed at high pressure drop,2,100,100,0,0,DEGRADATION,PERCENT
+CV * FR,Yes,0,Initial valve fraction,2,1,1,0,0,FRACTION,FR
+CV * Q,Yes,0,Flow used to size optional series header,2,7949.36,13248.9,79.4936,0,FLOW,M3/HR
+CV * TT,Yes,0,Travel time,2,3,20,0,0,TIME,MIN
+DE * EXP,Yes,0,"Arithmetic, logical, or string value/expression",2,1e+20,1e+20,-1e+20,-1e+20,NONE,
+DE * INIT,Yes,0,Initial value,2,1e+20,1e+20,-1e+20,-1e+20,NONE,
+DE * UIF,Yes,0,Update only when this expression is true,2,1e+20,1e+20,-1e+20,-1e+20,NONE,
+E AIR-INLET CIN,Yes,1,Inlet throat convergence factor,2,10,100,0.1,0.01,NONE,
+E AIR-INLET COUT,Yes,1,Outlet throat convergence factor,2,10,100,0.1,0.01,NONE,
+E AIR-INLET DPOPEN,Yes,13.7895,Pressure differential to open valve for air intake,2,27.5789,55.1579,0,0,DELTA.PRES,KPA
+E AIR-INLET K,Yes,1.4,"Heat capacity ratio, Cp/Cv",2,1.8,1.8,1,1,NONE,
+E AIR-INLET MWAIR,Yes,29,Molecular weight of atmospheric air,2,30,30,28,28,NONE,
+E AIR-INLET PATM,Yes,0,Ambient atmospheric air pressure,,103.421,137.895,68.9473,34.4737,ABSOLUTE.PRESSURE,KPAA
+E AIR-INLET TATM,Yes,15.5556,Ambient atmospheric air temperature,2,48.8889,93.3333,3.19744e-14,-17.7778,TEMPERATURE,DC
+E AIR-INLET THROAT,Yes,0.64516,Valve throat area,2,58.0644,645.16,0.64516,0.064516,AREA,CM2
+E AIR-INLET TPIPE,Yes,15.5556,Temperature of air in the pipe,2,48.8889,93.3333,3.19744e-14,-17.7778,TEMPERATURE,DC
+E P-CONTROL P1,No,0,Lower end of the pressure control range,2,6.89473e+22,6.89473e+22,0,0,PRESSURE,KPAG
+E P-CONTROL P2,No,0,Upper end of the pressure control range,2,6.89473e+22,6.89473e+22,0,0,PRESSURE,KPAG
+E P-CONTROL T,Yes,21.1111,Temperature,2,5.55556e+21,5.55556e+21,-17.7778,-17.7778,TEMPERATURE,DC
+E Q(P) FLOW1,Yes,0,Lower end of the flow control range,2,6624.47,66244.7,-6624.47,-66244.7,FLOW,M3/HR
+E Q(P) FLOW2,Yes,0,Upper end of the flow control range,2,6624.47,66244.7,-6624.47,-66244.7,FLOW,M3/HR
+E Q(P) P1,No,0,Pressure used to scale the curve,2,10342.1,34473.7,0,0,PRESSURE,KPAG
+E Q(P) P2,No,0,Pressure used to scale the curve,2,10342.1,34473.7,0,0,PRESSURE,KPAG
+E Q(P) T,Yes,15.5556,Temperature,2,60,93.3333,4.44444,-12.2222,TEMPERATURE,DC
+E Q-CONTROL FLOW1,No,0,Lower end of the flow control range,2,6.62447e+22,6.62447e+22,-6.62447e+22,-6.62447e+22,FLOW,M3/HR
+E Q-CONTROL FLOW2,No,0,Upper end of the flow control range,2,6.62447e+22,6.62447e+22,-6.62447e+22,-6.62447e+22,FLOW,M3/HR
+E Q-CONTROL T,Yes,21.1111,Temperature,2,5.55556e+21,5.55556e+21,-17.7778,-17.7778,TEMPERATURE,DC
+E SALE/TAKE ELEV,Yes,0,Elevation,2,2377.44,3048,0,-76.2,ELEVATION,M
+E SALE/TAKE PMAX,Yes,34473.7,Highest allowable pressure,2,34473.7,68947.3,3447.37,689.473,PRESSURE,KPAG
+E SALE/TAKE PMIN,Yes,-100.636,Lowest allowable pressure,2,3447.37,6894.73,-107.53,-107.53,PRESSURE,KPAG
+E SALE/TAKE PRATE,Yes,1e+09,Pressure rate-of-change limit,2,1e+10,1e+10,-1e+10,-1e+10,DELTA.PRES,KPA
+E SALE/TAKE QMAX,Yes,66244.7,Highest allowable flow,2,6.62447e+10,6.62447e+10,-6.62447e+10,-6.62447e+10,FLOW,M3/HR
+E SALE/TAKE QMIN,Yes,-66244.7,Lowest allowable flow,2,6.62447e+10,6.62447e+10,-6.62447e+10,-6.62447e+10,FLOW,M3/HR
+E SALE/TAKE QRATE,Yes,1e+09,Flow rate-of-change limit,2,1e+10,1e+10,0,0,FLOW,M3/HR
+E SALE/TAKE SNQ,Yes,0,Nominal flow setpoint,2,6.62447e+10,1.32489e+11,-6.62447e+10,-1.32489e+11,FLOW,M3/HR
+E SALE/TAKE SP,No,0,Pressure setpoint,2,10342.1,17236.8,-103.421,-103.421,PRESSURE,KPAG
+E SALE/TAKE T,Yes,8,Temperature,2,93.3333,121.111,4.44444,-12.2222,TEMPERATURE,DC
+E SURGETANK C1,Yes,1,Entrance loss at node,2,1e+20,1e+20,0,0,NONE,
+E SURGETANK C2,Yes,1,Exit loss at node,2,1e+20,1e+20,0,0,NONE,
+E SURGETANK CDIAM,No,0,Inside diameter of connecting pipe,2,2.54e+21,2.54e+21,0,0,DIAMETER,MM
+E SURGETANK CLEN,No,0,Length of connecting pipe,2,3.048e+16,3.048e+16,0,0,LENGTH.HEADER,KM
+E SURGETANK FF,No,0,Moody friction factor for connecting pipe,2,1e+20,1e+20,0,0,NONE,
+E SURGETANK HEIGHT,No,0,Tank height or length,2,3.048e+19,3.048e+19,0,0,ELEVATION,M
+E SURGETANK ID,No,0,Tank diameter,2,2.54e+21,2.54e+21,0,0,DIAMETER,MM
+E SURGETANK K1,Yes,1,Entrance loss at tank,2,1e+20,1e+20,0,0,NONE,
+E SURGETANK K2,Yes,1,Exit loss at tank,2,1e+20,1e+20,0,0,NONE,
+E SURGETANK LEVEL,No,0,Initial liquid level,2,3.048e+19,3.048e+19,0,0,ELEVATION,M
+E SURGETANK NTANK,Yes,1.3,Polytropic exponent,2,1e+20,1e+20,0,0,NONE,
+E SURGETANK PINIT,No,0,Initial gas pressure,2,6.89473e+20,6.89473e+20,0,0,PRESSURE,KPAG
+FM * FLOW,No,0,Flow rate for sizing resistance,2,707921,1.17987e+06,0,0,FLOW,M3/HR
+FM * PIN,No,0,Inlet pressure for sizing resistance,2,9652.63,13789.5,689.473,0,PRESSURE,KPAG
+FM * POUT,No,0,Outlet pressure for sizing resistance,2,9652.63,13789.5,689.473,0,PRESSURE,KPAG
+FM * T,Yes,-17.7778,Temperature for sizing resistance,2,65.5556,93.3333,-12.2222,-17.7778,TEMPERATURE,DC
+GC * DDROP_P+,Yes,0,Pressure used to calculate discharge piping loss,2,6.89473e+22,6.89473e+22,0,0,PRESSURE,KPAG
+GC * DDROP_P-,Yes,0,Pressure used to calculate discharge piping loss,2,6.89473e+22,6.89473e+22,0,0,PRESSURE,KPAG
+GC * DDROP_Q,Yes,0,Flow used to calculate suction discharge loss,2,1.17987e+25,1.17987e+25,0,0,FLOW,M3/HR
+GC * EFF,Yes,1,Efficiency,2,1,1,0,0,EFFICIENCY,FR
+GC * HR,Yes,0,Constant heat rate,2,28297.1,42445.6,0,0,HEAT.RATE,KJ/KW-HR
+GC * K1,Yes,0.12198,Compressor equation coefficient one,2,6.3202e+18,6.3202e+18,0,0,POWER.OVER.FLOW,KW-HR/M3
+GC * K2,Yes,0.121348,Compressor equation coefficient two,2,6.3202e+18,6.3202e+18,0,0,POWER.OVER.FLOW,KW-HR/M3
+GC * K3,Yes,0.231,Compressor equation exponent,2,1e+22,1e+22,0,0,NONE,
+GC * MNP-,Yes,0,Minimum suction pressure constraint,2,6.89473e+22,6.89473e+22,0,0,PRESSURE,KPAG
+GC * MNPW,Yes,0,Minimum allowable compressor power constraint,2,7.457e+21,7.457e+21,0,0,POWER,KW
+GC * MNR,Yes,1,Minimum compressor ratio constraint,2,10,10,0,0,NONE,
+GC * MXP+,Yes,68947.3,Maximum discharge pressure constraint,2,6.89473e+22,6.89473e+22,0,0,PRESSURE,KPAG
+GC * MXR,Yes,10,Maximum compressor ratio constraint,2,10,10,0,0,NONE,
+GC * NPOLY,Yes,1.3,Polytropic exponent,2,1.6,5,1.1,1.0001,NONE,
+GC * NRN,Yes,1,Number of identical running compressors,2,10,20,0,0,NONE,
+GC * PDMAX,Yes,68947.3,Discharge pressure setpoint,2,6.89473e+22,6.89473e+22,0,0,PRESSURE,KPAG
+GC * PSMIN,Yes,0,Suction pressure setpoint,2,6.89473e+22,6.89473e+22,0,0,PRESSURE,KPAG
+GC * PWMAX,Yes,7.457e+21,Maximum allowable compressor power constraint,2,7.457e+21,7.457e+21,0,0,POWER,KW
+GC * QMAX,Yes,1.17987e+07,Maximum flow constraint,2,1.17987e+25,1.17987e+25,0,0,FLOW,M3/HR
+GC * QMIN,Yes,0,Minimum flow constraint,2,1.17987e+25,1.17987e+25,0,0,FLOW,M3/HR
+GC * RP,No,745.7,Rated power for spin up and spin down sequencing,2,18642.5,28336.6,745.7,372.85,POWER,KW
+GC * SDROP_P+,Yes,0,Pressure used to calculate suction piping loss,2,6.89473e+22,6.89473e+22,0,0,PRESSURE,KPAG
+GC * SDROP_P-,Yes,0,Pressure used to calculate suction piping loss,2,6.89473e+22,6.89473e+22,0,0,PRESSURE,KPAG
+GC * SDROP_Q,Yes,0,Flow used to calculate suction piping loss,2,1.17987e+25,1.17987e+25,0,0,FLOW,M3/HR
+GC * SPPW,Yes,7.457e+21,Compressor power setpoint,2,7.457e+21,7.457e+21,0,0,POWER,KW
+GC * SQ+,Yes,1.17987e+07,Flow setpoint,2,1.17987e+25,1.17987e+25,0,0,FLOW,M3/HR
+GC * SR,Yes,10,Compression ratio setpoint,2,10,10,0,0,NONE,
+GC * START,Yes,3,Start time,2,10,30,0.4,0.25,TIME,MIN
+GC * STOP,Yes,3,Stop time,2,10,30,0.4,0.25,TIME,MIN
+GC * TRR,Yes,1.3,Temperature rise ratio,2,1.6,5,1.1,1.0001,NONE,
+GP * AMP,Yes,1,Area multiplier (number of identical parallel lines),2,5,20,0.9,0.01,NONE,
+GP * DRAD,Yes,0,DRA Degradation Coefficient,2,0.0984252,0.328084,0,0,INVERSE.PIPE.LENGTH,1/KM
+GP * EE,Yes,9.144,Maximum vertical distance batch interfaces could be misaligned,2,304.8,1609.34,0,0,ELEVATION,M
+GP * EFF,Yes,1,Pipe efficiency,2,1,1,0.1,0.01,NONE,
+GP * ELEV,Yes,0,Elevation,2,2377.44,3048,0,-76.2,ELEVATION,M
+GP * FF,Yes,0.013,Moody friction factor,2,0.05,0.1,0.01,0.008,NONE,
+GP * FILL.CP,Yes,0.795455,Pipe FILL heat capacity,2,8.3732,16.7464,0.041866,0.041866,HEAT.CAPACITY,KJ/KG-DC
+GP * FILL.DENS,Yes,1649.9,Pipe FILL density,2,16018.5,32036.9,80.0923,48.0554,DENSITY,KG/M3
+GP * FILL.K,Yes,0.934545,Pipe FILL thermal conductivity,2,186.909,373.818,0,0,HEAT.COND,KJ/HR-M-DC
+GP * FILL.KNOT,Yes,0,FILL thermal knots,,50,100,0,0,NONE,
+GP * FILL.THIK,Yes,0,Pipe FILL thickness,2,1270,2540,0,0,WALL,MM
+GP * GRND.BDEP,Yes,1219.2,Pipe burial depth,2,1270,2540,0,0,WALL,MM
+GP * GRND.CP,Yes,0.795455,Pipe GRND heat capacity,2,8.3732,16.7464,0.041866,0.041866,HEAT.CAPACITY,KJ/KG-DC
+GP * GRND.DENS,Yes,1649.9,Pipe GRND density,2,16018.5,32036.9,80.0923,48.0554,DENSITY,KG/M3
+GP * GRND.K,Yes,0.934545,Pipe GRND thermal conductivity,2,186.909,1246.06,0,0,HEAT.COND,KJ/HR-M-DC
+GP * GRND.KNOT,Yes,5,GRND thermal knots,,50,100,0,0,NONE,
+GP * GRND.THIK,Yes,1219.2,Pipe GRND thickness,2,4000,6000,0,0,WALL,MM
+GP * KS,Yes,0,Knot spacing (ADVANCED),2,16.0934,32.1869,0.0160934,0.00160934,LENGTH.PIPE,KM
+GP * LEN,No,16.0934,Pipe length,2,80.4672,321.869,0.160934,0.0160934,LENGTH.PIPE,KM
+GP * MODULUS,Yes,199.947,Young's Modulus,2,241.316,482.631,0.689473,0.0689473,TENSILE.STRESS,GPA
+GP * OD,No,508,Outside diameter,2,1219.2,1524,101.6,57.15,DIAMETER,MM
+GP * P+,Yes,0,Downstream pressure used to back-calculate roughness or friction factor,2,8273.68,10342.1,68.9473,0,PRESSURE,KPAG
+GP * P-,Yes,0,Upstream pressure used to back-calculate roughness or friction factor,2,8273.68,10342.1,68.9473,0,PRESSURE,KPAG
+GP * Q,Yes,0,Flow used to back-calculate roughness or friction factor (negative if flowing upstream),2,6.62447e+10,1.32489e+11,-6.62447e+10,-1.32489e+11,FLOW,M3/HR
+GP * ROUGH,Yes,0.0457,Colebrook roughness,2,0.254,12.7,0.00762,0.000254,ROUGHNESS,MM
+GP * SVB,Yes,0,Volume of diagnostic flow to be excused due to inaccuracies in modeling slack line flow,2,158.987,1589.87,0,0,VOLUME,M3
+GP * T+,Yes,-17.7778,Initial fluid temperature at downstream end,2,93.3333,121.111,4.44444,-12.2222,TEMPERATURE,DC
+GP * TEMP,Yes,-17.7778,Initial fluid temperature,2,93.3333,121.111,4.44444,-12.2222,TEMPERATURE,DC
+GP * WALL.CP,Yes,0.460528,Pipe WALL heat capacity,2,8.3732,16.7464,0.041866,0,HEAT.CAPACITY,KJ/KG-DC
+GP * WALL.DENS,Yes,7849.05,Pipe WALL density,2,16018.5,32036.9,80.0923,0,DENSITY,KG/M3
+GP * WALL.K,Yes,161.988,Pipe WALL thermal conductivity,2,186.909,373.818,0,0,HEAT.COND,KJ/HR-M-DC
+GP * WALL.KNOT,Yes,2,WALL thermal knots,,50,100,0,0,NONE,
+GP * WRAP.CP,Yes,1.04665,Pipe WRAP heat capacity,2,8.3732,16.7464,0.041866,0.041866,HEAT.CAPACITY,KJ/KG-DC
+GP * WRAP.DENS,Yes,576.665,Pipe WRAP density,2,16018.5,32036.9,80.0923,48.0554,DENSITY,KG/M3
+GP * WRAP.K,Yes,0.542036,Pipe WRAP thermal conductivity,2,186.909,373.818,0,0,HEAT.COND,KJ/HR-M-DC
+GP * WRAP.KNOT,Yes,0,WRAP thermal knots,,50,100,0,0,NONE,
+GP * WRAP.THIK,Yes,0,Pipe WRAP thickness,2,1270,2540,0,0,WALL,MM
+GP * WT,No,12.7,Wall thickness,2,25.4,31.75,5.08,2.54,WALL,MM
+H * AMP,Yes,1,Area multiplier,2,5,20,0.9,0.1,NONE,
+H * DLT,Yes,0,Delta temperature,2,27.7778,55.5556,-27.7778,-55.5556,DELTA.TEMP,DC
+H * DRAD,Yes,0,DRA degradation,2,100,100,0,0,DEGRADATION,PERCENT
+H * ELEV,Yes,0,Elevation,2,2377.44,3048,0,-76.2,ELEVATION,M
+H * LEN,No,0.03048,Actual length of the header,2,1.60934,2.286,0.003048,0.001524,LENGTH.HEADER,KM
+H * MOODY,Yes,0.013,Moody friction factor,2,0.05,0.1,0.01,0.008,NONE,
+H * OD,No,508,Outside diameter,2,1219.2,1524,101.6,57.15,DIAMETER,MM
+H * P+,Yes,0,Downstream pressure used to back-calculate friction factor,2,9999.98,12000,68.9473,0,PRESSURE,KPAG
+H * P-,Yes,0,Upstream pressure used to back-calculate friction factor,2,9999.98,12000,68.9473,0,PRESSURE,KPAG
+H * Q,Yes,0,Flow used to back-calculate friction factor,2,9936.71,66244.7,66.2447,0,FLOW,M3/HR
+H * T+,Yes,8,Initial fluid temperature at downstream end,2,93.3333,121.111,4.44444,-12.2222,TEMPERATURE,DC
+H * T-,Yes,8,Initial fluid temperature at upstream end,2,93.3333,121.111,4.44444,-12.2222,TEMPERATURE,DC
+H * TMP,Yes,21.1111,Outlet temperature,2,93.3333,121.111,4.44444,-12.2222,TEMPERATURE,DC
+H * WT,No,12.7,Wall thickness,2,25.4,31.75,5.08,2.54,WALL,MM
+HF * DRAD,Yes,100,DRA degradation,2,100,100,0,0,DEGRADATION,PERCENT
+HF * JP,Yes,0,"multiplier for inlet pressure, first equation",2,1e+10,1e+10,-1e+10,-1e+10,NONE,
+HF * JQ,Yes,0,"multiplier for flow, first equation",2,1e+10,1e+10,-1e+10,-1e+10,NONE,
+HF * JRHS,Yes,0,desired value of first equation,2,1e+10,1e+10,-1e+10,-1e+10,NONE,
+HF * JWT,Yes,0,"weight, first equation",2,1e+10,1e+10,-1e+10,-1e+10,NONE,
+HF * SQ,Yes,0,Flow setpoint,2,6.62447e+06,6.62447e+09,-6.62447e+06,-6.62447e+09,FLOW,M3/HR
+I * DLY,Yes,0,Delay for initiating an event-programmed response,2,1e+22,1e+22,0,0,TIME,MIN
+I * FUNC1,No,0,Output value before activation begins,2,1e+22,1e+22,-1e+22,-1e+22,NONE,
+I * FUNC2,No,0,Output value after activation ends,2,1e+22,1e+22,-1e+22,-1e+22,NONE,
+I * SC,Yes,1,Time scale factor,2,1e+22,1e+22,0,0,NONE,
+I * ST,Yes,1e+20,Time scale shift,2,1e+22,1e+22,0,0,TIME,MIN
+I * T1,No,0,Beginning reference time,2,1e+22,1e+22,-1e+22,-1e+22,SIG.TIME,MIN
+I * T2,No,0,Ending reference time,2,1e+22,1e+22,-1e+22,-1e+22,SIG.TIME,MIN
+I * VAL,Yes,0,Constant value,2,1e+22,1e+22,-1e+22,-1e+22,NONE,
+IA * MATD,Yes,1589.87,Downstream pipe volume to search,2,15898.7,158987,158.987,15.8987,VOLUME,M3
+IA * MATU,Yes,1589.87,Upstream pipe volume to search,2,15898.7,158987,158.987,15.8987,VOLUME,M3
+IA * SIG,Yes,794.936,Volume of signal to save and search for,2,7949.36,79493.6,79.4936,7.94936,VOLUME,M3
+ISOTHERMAL * TEMP,Yes,21.1111,Temperature,2,65.5556,121.111,-17.7778,-45.5556,TEMPERATURE,DC
+KC * DLOSS,Yes,0.025,Fraction of power lost to inlet and outlet ducting,2,0.5,0.5,0,0,EFFICIENCY,FR
+KC * ELEV,Yes,0,Elevation of the compressor,2,2377.44,3048,0,-76.2,ELEVATION,M
+KC * HEC,Yes,1,Multiplier of table hydraulic efficiency values,2,0.99,1.1,0.6,0.5,NONE,
+KC * HR,Yes,0,Constant heat rate,2,28297.1,42445.6,0,0,HEAT.RATE,KJ/KW-HR
+KC * ME,Yes,0.97,The mechanical efficiency,2,0.99,1.1,0.6,0.5,EFFICIENCY,FR
+KC * MNS,Yes,0,Compressor minimum speed,2,1e+22,1e+22,0,0,SPEED,RPM
+KC * MXPW,Yes,74570,Maximum permissible turbine power under any conditions,2,18642.5,37285,74.57,0,POWER,KW
+KC * MXS,Yes,1e+22,Compressor maximum speed,2,1e+22,1e+22,0,0,SPEED,RPM
+KC * MXT+,Yes,260,High discharge temperature trip,2,315.556,371.111,15.5556,4.44444,TEMPERATURE,DC
+KC * MXTE,Yes,5.55556e+21,Maximum power turbine exhaust temperature,2,5.55556e+21,5.55556e+21,-17.7778,-17.7778,TEMPERATURE,DC
+KC * NPOLY,Yes,1.3,Polytropic exponent,2,1.6,5,1.1,1.0001,NONE,
+KC * NRN,Yes,1,Number of identical running compressors,2,10,20,0,0,NONE,
+KC * SP+,Yes,0,Discharge pressure setpoint,2,13789.5,689473,9652.63,2068.42,PRESSURE,KPAG
+KC * SP-,Yes,0,Suction pressure set point,2,5515.79,6894.73,2068.42,0,PRESSURE,KPAG
+KC * SQ+,Yes,0,Flow set point,2,1.17987e+06,1.7698e+06,0,0,FLOW,M3/HR
+KC * SS,Yes,0,Controlled compressor speed,2,1e+22,1e+22,0,0,SPEED,RPM
+KC * START,Yes,3,Start time,2,10,30,0.4,0.25,TIME,MIN
+KC * STOP,Yes,3,Stop time,2,10,30,0.4,0.25,TIME,MIN
+KC * TA,Yes,21.1111,Ambient temperature,2,5.55556e+21,5.55556e+21,-17.7778,-17.7778,TEMPERATURE,DC
+KC * TR,Yes,15,Reference temperature,2,5.55556e+21,5.55556e+21,-17.7778,-17.7778,TEMPERATURE,DC
+KC * TRR,Yes,1.3,Temperature rise ratio,2,1.6,5,1.1,1.0001,NONE,
+KP * DDROP_P+,Yes,0,Pressure used to calculate discharge piping loss,2,6.89473e+22,6.89473e+22,0,0,PRESSURE,KPAG
+KP * DDROP_P-,Yes,0,Pressure used to calculate discharge piping loss,2,6.89473e+22,6.89473e+22,0,0,PRESSURE,KPAG
+KP * DDROP_Q,Yes,0,Flow used to calculate suction discharge loss,2,1.17987e+25,1.17987e+25,0,0,FLOW,M3/HR
+KP * EFF,Yes,1,Efficiency,2,1,1,0,0,EFFICIENCY,FR
+KP * HR,Yes,0,Constant heat rate,2,28297.1,42445.6,0,0,HEAT.RATE,KJ/KW-HR
+KP * K1,Yes,0.12198,Compressor equation coefficient one,2,6.3202e+18,6.3202e+18,0,0,POWER.OVER.FLOW,KW-HR/M3
+KP * K2,Yes,0.121348,Compressor equation coefficient two,2,6.3202e+18,6.3202e+18,0,0,POWER.OVER.FLOW,KW-HR/M3
+KP * K3,Yes,0.231,Compressor equation exponent,2,1e+22,1e+22,0,0,NONE,
+KP * MNP-,Yes,0,Minimum suction pressure constraint,2,6.89473e+22,6.89473e+22,0,0,PRESSURE,KPAG
+KP * MNPW,Yes,0,Minimum allowable compressor power constraint,2,7.457e+21,7.457e+21,0,0,POWER,KW
+KP * MNQ,Yes,0,Minimum flow constraint,2,1.17987e+25,1.17987e+25,0,0,FLOW,M3/HR
+KP * MNR,Yes,1,Minimum compressor ratio constraint,2,10,10,0,0,NONE,
+KP * MXP+,Yes,68947.3,Maximum discharge pressure constraint,2,6.89473e+22,6.89473e+22,0,0,PRESSURE,KPAG
+KP * MXPW,Yes,7.457e+21,Maximum allowable compressor power constraint,2,7.457e+21,7.457e+21,0,0,POWER,KW
+KP * MXQ,Yes,1.17987e+07,Maximum flow constraint,2,1.17987e+25,1.17987e+25,0,0,FLOW,M3/HR
+KP * MXR,Yes,10,Maximum compressor ratio constraint,2,10,10,0,0,NONE,
+KP * NPOLY,Yes,1.3,Polytropic exponent,2,1.6,5,1.1,1.0001,NONE,
+KP * NRN,Yes,1,Number of identical running compressors,2,10,20,0,0,NONE,
+KP * RP,No,745.7,Rated power for spin up and spin down sequencing,2,18642.5,28336.6,745.7,372.85,POWER,KW
+KP * SDROP_P+,Yes,0,Pressure used to calculate suction piping loss,2,6.89473e+22,6.89473e+22,0,0,PRESSURE,KPAG
+KP * SDROP_P-,Yes,0,Pressure used to calculate suction piping loss,2,6.89473e+22,6.89473e+22,0,0,PRESSURE,KPAG
+KP * SDROP_Q,Yes,0,Flow used to calculate suction piping loss,2,1.17987e+25,1.17987e+25,0,0,FLOW,M3/HR
+KP * SP+,Yes,68947.3,Discharge pressure setpoint,2,6.89473e+22,6.89473e+22,0,0,PRESSURE,KPAG
+KP * SP-,Yes,0,Suction pressure setpoint,2,6.89473e+22,6.89473e+22,0,0,PRESSURE,KPAG
+KP * SPW,Yes,7.457e+21,Compressor power setpoint,2,7.457e+21,7.457e+21,0,0,POWER,KW
+KP * SQ+,Yes,1.17987e+07,Flow setpoint,2,1.17987e+25,1.17987e+25,0,0,FLOW,M3/HR
+KP * SR,Yes,10,Compression ratio setpoint,2,10,10,0,0,NONE,
+KP * START,Yes,3,Start time,2,10,30,0.4,0.25,TIME,MIN
+KP * STOP,Yes,3,Stop time,2,10,30,0.4,0.25,TIME,MIN
+KP * TRR,Yes,1.3,Temperature rise ratio,2,1.6,5,1.1,1.0001,NONE,
+KV * AMT,Yes,1,Angle movement time,2,5,15,0.25,0.1,TIME,MIN
+KV * HEC,Yes,1,Multiplier of table hydraulic efficiency values,2,0.99,1.1,0.6,0.5,NONE,
+KV * HR,Yes,0,Constant heat rate,2,28297.1,42445.6,0,0,HEAT.RATE,KJ/KW-HR
+KV * ME,Yes,0.97,The mechanical efficiency,2,0.99,1.1,0.6,0.5,EFFICIENCY,FR
+KV * MNA,Yes,0,Minimum guide vane angle,2,70,90,-70,-90,ANGLE,DEGREE
+KV * MNP-,Yes,0,Minimum suction pressure constraint,2,9652.63,13789.5,0,0,PRESSURE,KPAG
+KV * MNPW,Yes,0,Minimum permissible power,2,7457,11185.5,0,0,POWER,KW
+KV * MXA,Yes,0,Maximum guide vane angle,2,70,90,-70,-90,ANGLE,DEGREE
+KV * MXP+,Yes,68947.3,Maximum discharge pressure constraint,2,9652.63,13789.5,0,0,PRESSURE,KPAG
+KV * MXPW,Yes,74570,Maximum permissible turbine power under any conditions,2,18642.5,37285,74.57,0,POWER,KW
+KV * MXT+,Yes,260,High discharge temperature trip,2,315.556,371.111,15.5556,4.44444,TEMPERATURE,DC
+KV * NPOLY,Yes,1.3,Polytropic exponent,2,1.6,5,1.1,1.0001,NONE,
+KV * NRN,Yes,1,Number of identical running compressors,2,10,20,0,0,NONE,
+KV * SA,Yes,100,Guide vane angle set point,2,70,90,-70,-90,ANGLE,DEGREE
+KV * SP+,Yes,68947.3,Discharge pressure setpoint,2,9652.63,13789.5,2068.42,0,PRESSURE,KPAG
+KV * SP-,Yes,0,Suction pressure set point,2,5515.79,6894.73,2068.42,0,PRESSURE,KPAG
+KV * SPD,No,0,Speed at which the compressor will operate,2,20000,30000,1000,0,SPEED,RPM
+KV * SPWR,Yes,74570,Power set point,2,18642.5,37285,74.57,0,POWER,KW
+KV * SQ+,Yes,1.17987e+07,Flow set point,2,1.17987e+06,1.7698e+06,0,0,FLOW,M3/HR
+KV * START,Yes,3,Start time,2,10,30,0.4,0.25,TIME,MIN
+KV * STOP,Yes,3,Stop time,2,10,30,0.4,0.25,TIME,MIN
+KV * TRR,Yes,1.3,Temperature rise ratio,2,1.6,5,1.1,1.0001,NONE,
+MS * QSMN.NB,Yes,0,Minimum diagnostic flow used in QST circulation calculations,2,662.447,6624.47,0,0,FLOW,M3/HR
+MS * QSMN.SB,Yes,0,Minimum diagnostic flow used in leak location calculations,2,662.447,6624.47,0,0,FLOW,M3/HR
+P * DH+BP,Yes,0,Differential head at BEP flow and 0 speed,2,3.048e+09,6.096e+09,-3.048e+09,-6.096e+09,HEAD,M
+P * DH-BP,Yes,0,Differential head at BEP reverse flow and 0 speed,2,3.048e+09,6.096e+09,-3.048e+09,-6.096e+09,HEAD,M
+P * DP,Yes,0,valve pressure drop when fully open,2,34.4737,137.895,-0.00689473,-6.89473,DELTA.PRES,KPA
+P * DRA_DEG,Yes,100,DRA degradation,2,100,100,0,0,DEGRADATION,PERCENT
+P * H-MULT,Yes,1,Multiplier for head or power data,2,10,20,0.1,0.05,NONE,
+P * HD-BP,No,304.8,Pump differential head at BEP,2,914.4,1066.8,3.048,1.524,HEAD,M
+P * HP-BP,No,9321.25,Pump brake horsepower based on water at BEP,2,9694.1,14914,74.57,0.7457,POWER,KW
+P * INERT,Yes,42.1401,Effective moment of inertia,2,210.7,421.401,0.00421401,4.21401e-05,INERTIA,KG-M2
+P * POWER,No,9321.25,Rated driver power,2,9694.1,14914,74.57,0.7457,POWER,KW
+P * Q,Yes,0,valve flow when fully open,2,7949.36,13248.9,-0.00662447,-6.62447,FLOW,M3/HR
+P * Q-BP,No,6624.47,Pump flow rate at BEP,2,7949.36,13248.9,79.4936,0,PUMP.AFLOW,AM3/HR
+P * Q-MULT,Yes,1,Multiplier for flow data,2,5,10,0.2,0.1,NONE,
+P * QMAX,Yes,3312.24,maximum flow,2,7949.36,13248.9,331.224,662.447,FLOW,M3/HR
+P * RPM-BP,No,1000,Pump speed at best efficiency point,2,3600,10000,700,30,SPEED,RPM
+P * SFR,Yes,0,"Stopping friction, percent of rated torque",2,5,10,0,0,PERCENT,PERCENT
+P * SMIN,Yes,1000,minimum speed,2,2000,3600,100,30,SPEED,RPM
+P * SPEED,No,1000,Rated pump speed,2,3600,10000,700,30,SPEED,RPM
+P * START,Yes,0,Delay after pump is started before valve starts to open,2,2,5,-1,-2,TIME,MIN
+P * STG,Yes,0,Number of stages,,5,10,1,1,NONE,
+P * STOP,Yes,0,Delay after pump is stopped before valve starts to close,2,280000,300000,-1,-2,TIME,MIN
+P * TORQ,Yes,160,Average starting torque as a percent of running torque,2,200,250,100,80,NONE,
+P * TQ+BP,Yes,0,Pump torque at BEP flow and 0 speed,2,1.35582e+10,2.71164e+10,-1.35582e+10,-2.71164e+10,TORQUE,N-M
+P * TQ-BP,Yes,0,Pump torque at BEP reverse flow and 0 speed,2,1.35582e+10,2.71164e+10,-1.35582e+10,-2.71164e+10,TORQUE,N-M
+P * TRT,Yes,0,valve travel time,2,10,60,-0.001,-1,TIME,MIN
+PIPEPARMS * ETOL,Yes,0,Elevation data reduction tolerance,2,10,14,0.5,0,ELEVATION,M
+PIPEPARMS * N,Yes,2.394e-06,Pipe thermal expansion coefficient,2,1.8,1.818,5.4e-08,0,INVERSEDELTAT,1/DC
+PIPEPARMS * PINIT,Yes,2068.42,Initial pressure at the highest elevation,2,10342.1,13789.5,6.89473,0,PRESSURE,KPAG
+PIPEPARMS * PTOL,Yes,0,Pressure data reduction tolerance,2,13.7895,68.9473,0,0,DELTA.PRES,KPA
+PIPEPARMS * SPAC,Yes,0,Pipe interval (knot) spacing,2,16.0934,40.2336,0.0160934,0,LENGTH.PIPE,KM
+RC * CE,Yes,1,Compressor efficiency,2,0.97,1,0.8,0.5,EFFICIENCY,FR
+RC * DBS,Yes,5,Speed dead band,2,50,100,0,0,SPEED,RPM
+RC * DBT,Yes,1,Torque dead band as percentage of rated torque,2,20,20,0,0,FRACTION.TORQUE,PERCENT
+RC * DEL,Yes,3,Time delay for trips and unloading step selection,2,1e+06,1e+06,0,0,TIME,MIN
+RC * HR,Yes,0,Constant heat rate,2,28297.1,42445.6,0,0,HEAT.RATE,KJ/KW-HR
+RC * LC,Yes,0.04,Additive correction to volumetric efficiency,2,1,1,0,0,NONE,
+RC * LM,Yes,0,Multiplicative correction to volumetric efficiency,2,10,10,0,0,NONE,
+RC * ME,Yes,0.95,Mechanical efficiency,2,0.97,1,0.8,0.5,EFFICIENCY,FR
+RC * NPOLY,Yes,1.3,Polytropic exponent,2,1.6,5,1.1,1.0001,NONE,
+RC * NRN,Yes,1,Number of identical running compressors,2,10,20,0,0,NONE,
+RC * PDMAX,Yes,68947.3,Discharge pressure setpoint,2,9652.63,13789.5,2068.42,0,PRESSURE,KPAG
+RC * PSMIN,Yes,0,Suction pressure setpoint,2,5515.79,6894.73,2068.42,0,PRESSURE,KPAG
+RC * PWMAX,No,0,Maximum operating power at maximum speed,2,745700,745700,0,0,POWER,KW
+RC * RMAX,Yes,10,Maximum operating compression ratio,2,10,10,0,0,NONE,
+RC * SMAX,No,0,Maximum operating speed,2,1e+06,1e+06,0,0,SPEED,RPM
+RC * SMIN,Yes,0,Minimum operating speed,2,1e+06,1e+06,0,0,SPEED,RPM
+RC * SPQ,Yes,1.17987e+07,Flow setpoint,2,1.17987e+06,1.7698e+06,0,0,FLOW,M3/HR
+RC * SPS,Yes,0,Speed setpoint,2,1e+06,1e+06,0,0,SPEED,RPM
+RC * SPT,Yes,100,Torque setpoint as percentage of rated torque,2,150,200,0,0,FRACTION.TORQUE,PERCENT
+RC * START,Yes,0.5,Start time,2,10,30,0.4,0.25,TIME,MIN
+RC * STOP,Yes,0.5,Stop time,2,10,30,0.4,0.25,TIME,MIN
+RC * TQMAX,Yes,100,Maximum operating torque as percentage of rated torque,2,150,200,100,0,FRACTION.TORQUE,PERCENT
+RC * TQMIN,Yes,80,Minimum operating torque as percentage of rated torque,2,100,100,0,0,FRACTION.TORQUE,PERCENT
+RC * TRR,Yes,1.3,Temperature rise ratio,2,1.6,5,1.1,1.0001,NONE,
+RE * CVC,Yes,0,Valve coef when fully closed,2,29.167,145.835,0,0,VALVE.COEFF,GAL/MIN-PSI.5
+RE * CVO,No,0,Valve coef when fully opened,2,875010,8.7501e+06,875.01,0,VALVE.COEFF,GAL/MIN-PSI.5
+RE * DRA_DEG,Yes,100,DRA Degradation,2,100,100,0,0,DEGRADATION,PERCENT
+RE * SFR,Yes,1,Fraction open setpoint,2,1,1,0,0,FRACTION,FR
+RE * SP+,Yes,68947.3,Discharge pressure setpoint,2,68947.3,68947.3,0,0,PRESSURE,KPAG
+RE * SP-,Yes,0,Suction pressure setpoint,2,68947.3,68947.3,0,0,PRESSURE,KPAG
+RE * SQ,Yes,1.17987e+08,Flow setpoint,2,2.35974e+08,1.17987e+09,0,0,FLOW,M3/HR
+RE * TT,Yes,0.5,Travel time,2,3,10,0,0,TIME,MIN
+RG * CGMAX,No,0,Valve coef when fully opened,2,12320.6,123206,123.206,0,VALVE.CG,M3/HR-KPA
+RG * CGMIN,Yes,0,Valve coef when fully closed,2,0.410687,2.05343,0,0,VALVE.CG,M3/HR-KPA
+RG * DRA_DEG,Yes,100,DRA Degradation,2,100,100,0,0,DEGRADATION,PERCENT
+RG * SFR,Yes,1,Fraction open setpoint,2,1,1,0,0,FRACTION,FR
+RG * SPD,Yes,68947.3,Discharge pressure setpoint,2,68947.3,68947.3,0,0,PRESSURE,KPAG
+RG * SPU,Yes,0,Suction pressure setpoint,2,68947.3,68947.3,0,0,PRESSURE,KPAG
+RG * SQ,Yes,1.17987e+08,Flow setpoint,2,2.35974e+08,1.17987e+09,0,0,FLOW,M3/HR
+RG * TT,Yes,0.5,Travel time,2,3,10,0,0,TIME,MIN
+RV * CVC,Yes,0,Valve coef when fully closed,2,0.1,1,0,0,VALVE.COEFF,GAL/MIN-PSI.5
+RV * CVO,No,500,Valve coef when fully open,2,400001,500000,50,10,VALVE.COEFF,GAL/MIN-PSI.5
+RV * DIAM,No,152.4,Diameter at flange,2,600,900,50.8,25.4,DIAMETER,MM
+RV * DRAD,Yes,100,DRA Degradation,2,100,100,0,0,DEGRADATION,PERCENT
+RV * NCC,Yes,0,Closing normalization constant,2,1.45038e+21,1.45038e+21,0,0,INVERSEDELTAP,1/KPA
+RV * NCO,Yes,0,Opening normalization constant,2,1.45038e+21,1.45038e+21,0,0,INVERSEDELTAP,1/KPA
+RV * PC,Yes,3447.37,Closing pressure setpoint,2,6894.73,10342.1,689.473,344.737,PRESSURE,KPAG
+RV * PO,No,3447.37,Opening pressure setpoint,2,6895,20000,689,345,PRESSURE,KPAG
+RV * TTC,Yes,0.00833333,Closing time,2,0.0333333,0.08,5e-05,1e-05,TIME,MIN
+RV * TTO,Yes,0.00833333,Opening time,2,0.0333333,0.08,5e-05,1e-05,TIME,MIN
+SC * ACC,Yes,50,Accuracy limit for the measurement,2,1e+20,1e+20,-1e+20,-1e+20,NONE,
+SC * ACP,Yes,43200,Autocalibration period,2,1e+20,1e+20,-1e+20,-1e+20,NONE,
+SC * BIAS,Yes,0,Bias on :FILT value,2,10,1000,-10,-1000,NONE,
+SC * BMAX,Yes,1e+10,Maximum value to use when measurement is BAD,2,1e+20,1e+20,-1e+20,-1e+20,NONE,
+SC * BMIN,Yes,-1e+10,Minimum value to use when measurement is BAD,2,1e+20,1e+20,-1e+20,-1e+20,NONE,
+SC * BRB,Yes,1e+10,Rate bound to use when measurement is BAD,2,1e+20,1e+20,-1e+20,-1e+20,NONE,
+SC * BREP,Yes,1000,Repeatability to use when measurement is BAD,2,1e+20,1e+20,-1e+20,-1e+20,NONE,
+SC * BRM1,Yes,1,EREP decay time multiplier for large EREP,2,3,9,0,0,NONE,
+SC * BRM2,Yes,1,EREP decay time multiplier for small EREP,2,3,9,0,0,NONE,
+SC * FORE,Yes,0,"When using forecast data, current value of the forecast",2,1e+20,1e+20,-1e+20,-1e+20,NONE,
+SC * IMAX,Yes,1e+10,Maximum value accepted as GOOD,2,1e+20,1e+20,-1e+20,-1e+20,NONE,
+SC * IMIN,Yes,-1e+10,Minimum value accepted as GOOD,2,1e+20,1e+20,-1e+20,-1e+20,NONE,
+SC * MREP,Yes,10,Repeatability to use for MANUAL points,2,1e+20,1e+20,-1e+20,-1e+20,NONE,
+SC * MULT,Yes,1,Multiplier on :FILT value,2,10,1000,-10,-1000,NONE,
+SC * NREP,Yes,10,Repeatability to use for NOCHANGE points,2,1e+20,1e+20,-1e+20,-1e+20,NONE,
+SC * OFF,Yes,0,Value to use when MODE=OFF,2,1e+20,1e+20,-1e+20,-1e+20,NONE,
+SC * OMAX,Yes,1e+10,Maximum limit on calculated value,2,1e+20,1e+20,-1e+20,-1e+20,NONE,
+SC * OMIN,Yes,-1e+10,Minimum limit on calculated value,2,1e+20,1e+20,-1e+20,-1e+20,NONE,
+SC * OREP,Yes,10,Repeatability to use when mode is OFF,2,1e+20,1e+20,-1e+20,-1e+20,NONE,
+SC * RANGE,Yes,1000,Instrument range (used when using X item percentages),2,2000,5000,100,10,NONE,
+SC * RB,Yes,1e+10,Maximum allowed change with respect to time,2,1e+20,1e+20,-1e+20,-1e+20,NONE,
+SC * RDR,Yes,1,Repeatability decay rate,2,1e+20,1e+20,-1e+20,-1e+20,NONE,
+SC * REP,Yes,10,Repeatability limit for the measurement,2,1e+20,1e+20,-1e+20,-1e+20,NONE,
+SC * SDB,Yes,1e+10,Maximum allowed second difference,2,1e+20,1e+20,-1e+20,-1e+20,NONE,
+SC * SP,Yes,0,Expected scan period for measurement,2,1e+20,1e+20,-1e+20,-1e+20,NONE,
+SC * TAVE,Yes,0,Time averaging period,2,1e+20,1e+20,-1e+20,-1e+20,NONE,
+SC * TEB,Yes,0,Maximum error in time stamp for the measurement,2,1e+20,1e+20,-1e+20,-1e+20,NONE,
+SC * TOUT,Yes,5,Require updates at least this often for GOOD status,2,1e+20,1e+20,-1e+20,-1e+20,NONE,
+SC * VAL,Yes,0,value to use (instead of value from RTUDATA file),2,1e+20,1e+20,-1e+20,-1e+20,NONE,
+SC * XACC,Yes,5,Percentage accuracy limit for the measurement,2,5,10,0.5,0.1,XRANGE,PERCENT
+SC * XBRB,Yes,1e+09,Percentage rate bound to use when measurement is BAD,2,1e+20,1e+20,-1e+20,-1e+20,XRANGE.OVER.TIME,PERCENT/MIN
+SC * XBREP,Yes,100,Percentage repeatability to use when measurement is BAD,2,100,100,5,1,XRANGE,PERCENT
+SC * XMREP,Yes,1,Percentage repeatability to use for MANUAL points,2,100,100,5,1,XRANGE,PERCENT
+SC * XNREP,Yes,1,Percentage repeatability to use for NOCHANGE points,2,2,5,0.05,0.01,XRANGE,PERCENT
+SC * XOREP,Yes,1,Percentage repeatability to use when mode is OFF,2,100,100,5,1,XRANGE,PERCENT
+SC * XRB,Yes,1e+09,Percentage maximum allowed change with respect to time,2,1e+20,1e+20,-1e+20,-1e+20,XRANGE.OVER.TIME,PERCENT/MIN
+SC * XRDR,Yes,0.1,Percentage repeatability decay rate,2,1e+20,1e+20,-1e+20,-1e+20,XRANGE.OVER.TIME,PERCENT/MIN
+SC * XREP,Yes,1,Percentage repeatability limit for the measurement,2,2,5,0.05,0.01,XRANGE,PERCENT
+SELECT * PRESSURE,Yes,0,Pressure for reporting/balancing diagnostic flows,2,5515.79,6894.73,-1,-2,PRESSURE,KPAG
+SELECT * TEMPERATURE,Yes,15.5556,Temperature for reporting/balancing diagnostic flows,2,37.7778,48.8889,10,4.44444,TEMPERATURE,DC
+SR * SLIP,Yes,0,Slip factor,2,1,1,0,0,NONE,
+ST * PMAX,Yes,5515.79,Maximum station discharge pressure,2,6894.73,34473.7,1378.95,689.473,PRESSURE,KPAG
+ST * PMIN,Yes,275.789,Minimum station suction pressure,2,689.473,6894.73,137.895,0,PRESSURE,KPAG
+STATE AGA CO2,Yes,0,Mole fraction of carbon dioxide,6,3e-07,5e-07,0,0,COMPOSITION,FR
+STATE AGA HHV,Yes,37609.5,High heating value,2,42835.5,67046.8,17767.4,7449.65,HEAT.VALUE,KJ/M3
+STATE AGA N2,Yes,0,Mole fraction of nitrogen,6,3e-07,5e-07,0,0,COMPOSITION,FR
+STATE AGA SG,Yes,0.5539,Specific gravity,6,0.87,1.52,0.5535,0.5535,NONE,
+STATE AGA TRIVB,Yes,79.4936,Trival batch volume,2,1.58987e+08,1.58987e+08,0,0,VOLUME,M3
+STATE AGA TRIVC,Yes,0.005,Trivial mass concentration,2,0.25,0.25,0,0,NONE,
+STATE AGA VALUES,Yes,0,User defined component value,6,2e+10,2e+10,-2e+10,-2e+10,NONE,
+STATE BWRS BENZ,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS C1,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS C2,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS C3,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS C7+,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS CO2,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS ETYL,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS H2,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS H2O,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS H2S,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS HE,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS HVY1,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS HVY2,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS IC4,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS IC5,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS MIXWT,Yes,1,Mixing weight for batch labels,2,1,1,0,0,NONE,
+STATE BWRS N2,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS NC10,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS NC11,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS NC12,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS NC13,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS NC14,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS NC15,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS NC16,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS NC17,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS NC18,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS NC19,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS NC20,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS NC4,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS NC5,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS NC6,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS NC7,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS NC8,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS NC9,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS O2,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS PPYL,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS TOLU,Yes,0,Mass or mole fraction,2,1,1,0,0,COMPOSITION,FR
+STATE BWRS TRIVB,Yes,79.4936,Trival batch volume,2,158987,1.58987e+06,0,0,VOLUME,M3
+STATE BWRS TRIVC,Yes,0.005,Trivial mass concentration,2,0.25,0.25,0,0,NONE,
+STATE BWRS VISC,Yes,0.01,Base viscosity,2,5,10,0.005,0.001,VISCOSITY,CP
+STATE BWRS VPMI,Yes,0,Pressure coefficient of viscosity,2,0.145038,0.290076,-0.145038,-0.290076,INVERSEDELTAP,1/KPA
+STATE BWRS VTMI,Yes,0,Temperature coefficient of viscosity,2,1.8,3.6,-1.8,-3.6,INVERSEDELTAT,1/DC
+STATE CNGA HHV,Yes,40973.1,High heating value,2,44697.9,52147.5,33523.4,29798.6,HEAT.VALUE,KJ/M3
+STATE CNGA SG,No,0.6,Specific gravity,2,0.65,0.65,0.55,0.55,NONE,
+STATE SCL A,Yes,18,Constant for ASTM formula of viscosity,2,1e+22,1e+22,-1e+22,-1e+22,NONE,
+STATE SCL B,Yes,7,Constant for ASTM formula of viscosity,2,1e+22,1e+22,-1e+22,-1e+22,NONE,
+STATE SCL BFC,Yes,0,Batch friction correction,2,0.1,0.1,-0.1,-0.1,NONE,
+STATE SCL CV0,Yes,4.18665,Heat capacity at constant density,2,774.738,774.738,0,0,HEAT.CAPACITY,KJ/KG-DC
+STATE SCL CVT,Yes,0,Temperature coefficient of heat capacity,2,1.39453e+22,1.39453e+22,-1.39453e+22,-1.39453e+22,HEAT.CAPA.OVER.DELTAT,KJ/KG-DC2
+STATE SCL D0,No,999.552,Density of this fluid at P0 and T0,2,8009.23,8009.23,0.0160185,0.0160185,DENSITY,KG/M3
+STATE SCL DENERR,Yes,16.0185,Density error,2,1601.85,1601.85,0,0,DENSITY,KG/M3
+STATE SCL K0,Yes,2.13699,Heat conductivity at T0,2,4.15054e+06,4.15054e+06,0,0,HEAT.COND,KJ/HR-M-DC
+STATE SCL KT,Yes,0,Temperature coefficent of heat conductivity,2,7.47098e+25,7.47098e+25,-7.47098e+25,-7.47098e+25,HEAT.COND.OVER.DELTAT,KJ/HR-M-DC2
+STATE SCL MIXB,Yes,79.4936,Minimum volume to begin interface batch display (TRANSMIX),2,1.58987e+08,1.58987e+08,0,0,VOLUME,M3
+STATE SCL MIXC,Yes,0.05,minimum impurity concentration for TRANSMIX display (by mass),2,1,1,0,0,COMPOSITION,FR
+STATE SCL MIXWT,Yes,1,Mixing weight,2,1,1,0,0,NONE,
+STATE SCL P0,Yes,0,Base pressure of this fluid,2,6.89473e+06,6.89473e+06,0,0,ABSOLUTE.PRESSURE,KPAA
+STATE SCL PD,Yes,137.895,Pressure drop through valves at which the DRA concentration is reduced to zero,2,6887.84,6887.84,0.689473,0.689473,DELTA.PRES,KPA
+STATE SCL PM0,Yes,1.86158e+06,Bulk modulus at P0 and T0,2,6.89473e+10,6.89473e+10,0,0,BULK.MOD,KPA
+STATE SCL PMODERR,Yes,20,Bulk modulus error as a percentage of bulk modulus,2,50,50,0,0,NONE,
+STATE SCL PPMULT,Yes,9.5,Multiplier for the delta P squared term,2,1000,1000,-15,-20,NONE,
+STATE SCL PTMULT,Yes,-9.7,Multiplier for the delta P delta T term,2,1000,1000,-1000,-1000,NONE,
+STATE SCL S0,Yes,0,Limiting shear stress at P0 and T0,2,1e+22,1e+22,-1e+22,-1e+22,SHEAR.STRESS,PA
+STATE SCL SPC,Yes,0,Pressure coefficent of the limiting shear stress,2,1.45038e+21,1.45038e+21,-1.45038e+21,-1.45038e+21,SHEAR.STRESS.OVER.DELTAP,PA/KPA
+STATE SCL STC,Yes,0,Temperature coefficent of the limiting shear stress,2,1.8e+22,1.8e+22,-1.8e+22,-1.8e+22,SHEAR.STRESS.OVER.DELTAT,PA/DC
+STATE SCL T0,Yes,15.5556,Base temperature of this fluid,2,537.778,537.778,-128.889,-128.889,TEMPERATURE,DC
+STATE SCL T1,Yes,15.5556,Temperature corresponding to VP1,2,60,93.3333,4.44444,-12.2222,TEMPERATURE,DC
+STATE SCL T2,Yes,37.7778,Temperature corresponding to VP2,2,60,93.3333,4.44444,-12.2222,TEMPERATURE,DC
+STATE SCL TM0,Yes,-1611.11,Temperature modulus at P0 and T0,2,5.55556e+21,5.55556e+21,-5.55556e+21,-5.55556e+21,DELTA.TEMP,DC
+STATE SCL TRIVB,Yes,79.4936,Trival batch volume,2,1.58987e+08,1.58987e+08,0,0,VOLUME,M3
+STATE SCL TRIVC,Yes,0.005,Trivial mass concentration,2,0.25,0.25,0,0,NONE,
+STATE SCL TTMULT,Yes,1.15,Multiplier for the delta T squared term,2,1000,1000,0,0,NONE,
+STATE SCL U0,Yes,1.2,Viscosity at P0 and T0,2,1e+06,1e+06,0,0,VISCOSITY,CP
+STATE SCL VISCERR,Yes,20,Viscosity error as a percentage of viscosity,2,7e+09,8e+09,0,0,NONE,
+STATE SCL VP1,Yes,1.76712,Vapor pressure of the fluid,2,1723.68,3447.37,0,0,ABSOLUTE.PRESSURE,KPAA
+STATE SCL VP2,Yes,6.54448,Second vapor pressure of the fluid,2,1723.68,3447.37,0,0,ABSOLUTE.PRESSURE,KPAA
+STATE SCL VPMI,Yes,0,Pressure coefficient of viscosity,2,1.45038e+21,1.45038e+21,-1.45038e+21,-1.45038e+21,INVERSEDELTAP,1/KPA
+STATE SCL VTMI,Yes,-0.027,Temperature coefficient of viscosity,2,0,0,-1.8e+22,-1.8e+22,INVERSEDELTAT,1/DC
+STATE TABLE DENS,No,999.552,Density,2,1121.29,1281.48,800.923,640.739,DENSITY,KG/M3
+STATE TABLE PRES,No,0,Pressure,2,10342.1,17236.8,0,-96.5263,PRESSURE,KPAG
+STATE TABLE SPH,Yes,1,Specific heat (heat capacity relative to water),2,2,3,0.5,0.1,NONE,
+STATE TABLE TEMP,No,-17.7778,Temperature,2,48.8889,93.3333,-17.7778,-40,TEMPERATURE,DC
+STATE TABLE VISC,Yes,1,Viscosity,2,500,1000,0.5,0.1,VISCOSITY,CP
+STATE TABLE VP,Yes,6.89473,Vapor Pressure,2,137.895,689.473,6.89473,0,ABSOLUTE.PRESSURE,KPAA
+T * AMP,Yes,1,Area multiplier (number of identical parallel lines),2,5,20,0.9,0.01,NONE,
+T * DRAD,Yes,0,DRA Degradation Coefficient,2,0.0984252,0.328084,0,0,INVERSE.PIPE.LENGTH,1/KM
+T * EE,Yes,9.144,Maximum vertical distance batch interfaces could be misaligned,2,304.8,1609.34,0,0,ELEVATION,M
+T * EFF,Yes,1,Pipe efficiency,2,1,1,0.1,0.01,NONE,
+T * ELEV,Yes,0,Elevation,2,2377.44,3048,-50,-76.2,ELEVATION,M
+T * FF,Yes,0.013,Moody friction factor,2,0.05,0.1,0.01,0.008,NONE,
+T * FILL.CP,Yes,0.795455,Pipe FILL heat capacity,2,8.3732,16.7464,0.041866,0.041866,HEAT.CAPACITY,KJ/KG-DC
+T * FILL.DENS,Yes,1649.9,Pipe FILL density,2,16018.5,32036.9,80.0923,48.0554,DENSITY,KG/M3
+T * FILL.K,Yes,0.934545,Pipe FILL thermal conductivity,2,186.909,373.818,0,0,HEAT.COND,KJ/HR-M-DC
+T * FILL.KNOT,Yes,0,FILL thermal knots,,50,100,0,0,NONE,
+T * FILL.THIK,Yes,0,Pipe FILL thickness,2,1270,2540,0,0,WALL,MM
+T * GRND.BDEP,Yes,1219.2,Pipe burial depth,2,2000,2540,0,0,WALL,MM
+T * GRND.CP,Yes,0.795455,Pipe GRND heat capacity,2,8.3732,16.7464,0.041866,0.041866,HEAT.CAPACITY,KJ/KG-DC
+T * GRND.DENS,Yes,1649.9,Pipe GRND density,2,16018.5,32036.9,80.0923,48.0554,DENSITY,KG/M3
+T * GRND.K,Yes,0.934545,Pipe GRND thermal conductivity,2,186.909,1246.06,0,0,HEAT.COND,KJ/HR-M-DC
+T * GRND.KNOT,Yes,5,GRND thermal knots,,50,100,0,0,NONE,
+T * GRND.THIK,Yes,1219.2,Pipe GRND thickness,2,4000,6000,0,0,WALL,MM
+T * KS,Yes,0,Knot spacing (ADVANCED),2,16.0934,32.1869,0.0160934,0.00160934,LENGTH.PIPE,KM
+T * LEN,No,16.0934,Pipe length,2,150,321.869,0.05,0.0160934,LENGTH.PIPE,KM
+T * MODULUS,Yes,199.947,Young's Modulus,2,241.316,482.631,0.689473,0.0689473,TENSILE.STRESS,GPA
+T * OD,No,508,Outside diameter,2,1219.2,1524,101.6,57.15,DIAMETER,MM
+T * P+,Yes,0,Downstream pressure used to back-calculate roughness or friction factor,2,8273.68,10342.1,68.9473,0,PRESSURE,KPAG
+T * P-,Yes,0,Upstream pressure used to back-calculate roughness or friction factor,2,8273.68,10342.1,68.9473,0,PRESSURE,KPAG
+T * Q,Yes,0,Flow used to back-calculate roughness or friction factor (negative if flowing upstream),2,6.62447e+10,1.32489e+11,-6.62447e+10,-1.32489e+11,FLOW,M3/HR
+T * RUF,Yes,0.0457,Colebrook or Nikuradse roughness,2,0.254,12.7,0.00762,0.000254,ROUGHNESS,MM
+T * SVB,Yes,0,Volume of diagnostic flow to be excused due to inaccuracies in modeling slack line flow,2,158.987,1589.87,0,0,VOLUME,M3
+T * T+,Yes,8,Initial fluid temperature at downstream end,2,93.3333,121.111,4.44444,-12.2222,TEMPERATURE,DC
+T * T-,Yes,8,Initial fluid temperature at upstream end,2,93.3333,121.111,4.44444,-12.2222,TEMPERATURE,DC
+T * WALL.CP,Yes,0.460528,Pipe WALL heat capacity,2,8.3732,16.7464,0.041866,0,HEAT.CAPACITY,KJ/KG-DC
+T * WALL.DENS,Yes,7849.05,Pipe WALL density,2,16018.5,32036.9,80.0923,0,DENSITY,KG/M3
+T * WALL.K,Yes,161.988,Pipe WALL thermal conductivity,2,186.909,373.818,0,0,HEAT.COND,KJ/HR-M-DC
+T * WALL.KNOT,Yes,2,WALL thermal knots,,50,100,0,0,NONE,
+T * WRAP.CP,Yes,1.04665,Pipe WRAP heat capacity,2,8.3732,16.7464,0.041866,0.041866,HEAT.CAPACITY,KJ/KG-DC
+T * WRAP.DENS,Yes,576.665,Pipe WRAP density,2,16018.5,32036.9,80.0923,48.0554,DENSITY,KG/M3
+T * WRAP.K,Yes,0.542036,Pipe WRAP thermal conductivity,2,186.909,373.818,0,0,HEAT.COND,KJ/HR-M-DC
+T * WRAP.KNOT,Yes,0,WRAP thermal knots,,50,100,0,0,NONE,
+T * WRAP.THIK,Yes,0,Pipe WRAP thickness,2,1270,2540,0,0,WALL,MM
+T * WT,No,12.7,Wall thickness,2,25.4,31.75,5.08,2.54,WALL,MM
+THERMAL * TEMP,Yes,21.1111,Temperature,2,65.5556,121.111,-17.7778,-45.5556,TEMPERATURE,DC
+TK * CVIN,Yes,3800,Inlet valve coefficient,2,100000,100000,0,0,VALVE.COEFF,GAL/MIN-PSI.5
+TK * CVOUT,Yes,5200,Outlet valve coefficient,2,100000,100000,0,0,VALVE.COEFF,GAL/MIN-PSI.5
+TK * ELEV,Yes,0,Elevation,2,2377.44,3048,0,-76.2,ELEVATION,M
+TK * HI,Yes,6359.49,Nominal full volume,2,23848.1,63594.9,0.0158987,0.0158987,VOLUME,M3
+TK * HIHI,Yes,6359.49,Total volume,2,23848.1,63594.9,0.0158987,0.0158987,VOLUME,M3
+TK * HT,Yes,12.192,Maximum fluid level,2,15.24,60.96,0.3048,0.003048,ELEVATION,M
+TK * INIT_VOL,Yes,0,Initial volume,2,23848.1,63594.9,0,0,VOLUME,M3
+TK * LO,Yes,0,Nominal empty volume,2,23848.1,63594.9,0,0,VOLUME,M3
+TK * LOLO,Yes,0,Minimum accessible volume,2,23848.1,63594.9,0,0,VOLUME,M3
+TK * ROOF,Yes,0,Roof pressure,2,34.4737,344.737,0,0,DELTA.PRES,KPA
+TK * T,Yes,20,Temperature,2,37.7778,93.3333,3.19744e-14,-17.7778,TEMPERATURE,DC
+TRANSTHERMAL * AC,Yes,0.023,Scale coefficient in Colburn term,2,1,1,0,0,NONE,
+TRANSTHERMAL * AG,Yes,1,Scale coeff. in laminar term,2,1,1,0,0,NONE,
+TRANSTHERMAL * BC,Yes,0.8,Reynolds number exponent in Colburn term,2,1,1,0,0,NONE,
+TRANSTHERMAL * BG1,Yes,0.14,Viscocity ratio exponent for heating,2,1,1,0,0,NONE,
+TRANSTHERMAL * BG2,Yes,0.14,Viscocity ratio exponent for cooling,2,1,1,0,0,NONE,
+TRANSTHERMAL * CC,Yes,0.333333,Prandtl number exponent in Colburn term,2,1,1,0,0,NONE,
+TRANSTHERMAL * CG,Yes,0,Scale coeff. representing effective d/L value,2,1,1,0,0,NONE,
+TRANSTHERMAL * DG,Yes,1,Reynolds x Prandtl number exponent in Grashof term,2,1,1,0,0,NONE,
+TRANSTHERMAL * EG,Yes,0.01,Coeff in laminar term,2,1,1,0,0,NONE,
+TRANSTHERMAL * FG,Yes,0.75,Exponent of Grashof x Prandtl number,2,1,1,0,0,NONE,
+TRANSTHERMAL * GG,Yes,0,Exponent of d/L,2,1,1,0,0,NONE,
+TRANSTHERMAL * HCOND,Yes,2.13699,Thermal conductivity of fluid,2,6.2303,6.2303,0,0,HEAT.COND,KJ/HR-M-DC
+TRANSTHERMAL * HFELC,Yes,0,Value of HFE for cooling in laminar flow region,2,1,1,0,0,NONE,
+TRANSTHERMAL * HFELH,Yes,0,Value of HFE for heating in laminar flow region,2,1,1,0,0,NONE,
+TRANSTHERMAL * HFETC,Yes,0,Value of HFE for cooling in turbulent flow region,2,1,1,0,0,NONE,
+TRANSTHERMAL * HFETH,Yes,0,Value of HFE for heating in turbulent flow region,2,1,1,0,0,NONE,
+TRANSTHERMAL * HG,Yes,0.33,Exponent in laminar term,2,1,1,0,0,NONE,
+TRANSTHERMAL * MFC,Yes,0,Minimum film coeff,2,13617.5,13617.5,0,0,HEAT.TRANSFER,KJ/HR-M2-DC
+TRANSTHERMAL * RE1,Yes,2100,Reynolds number separating laminar-dominated (Grashof) from transition region for heat transfer,2,1e+20,1e+20,0,0,NONE,
+TRANSTHERMAL * RE2,Yes,10000,Reynolds number separating transition region from turbulent (Colburn) region heat transfer,2,1e+20,1e+20,0,0,NONE,
+TRANSTHERMAL * SPH,Yes,1,Ratio of heat capacity of fluid to heat capacity of water,2,1,1,0,0,NONE,
+TRANSTHERMAL * TEMP,Yes,21.1111,Temperature,2,65.5556,121.111,-17.7778,-45.5556,TEMPERATURE,DC
+V * CVC,Yes,0,Valve coef when fully closed,2,800,1000,0,0,VALVE.COEFF,GAL/MIN-PSI.5
+V * CVO,No,0,Valve coef when fully open,2,875010,8.7501e+06,875.01,0,VALVE.COEFF,GAL/MIN-PSI.5
+V * DP,Yes,0,Valve pressure drop when fully open,2,34.4737,137.895,0.689473,0,DELTA.PRES,KPA
+V * DRAD,Yes,100,DRA degradation,2,100,100,0,0,DEGRADATION,PERCENT
+V * Q,Yes,0,Valve flow when fully open,2,7949.36,13248.9,79.4936,0,FLOW,M3/HR
+V G887 A1,Yes,0,Flow factor used to calculate the valve coeff,2,102084,1.02084e+06,0,0,VALVE.COEFF,GAL/MIN-PSI.5
+V G887 A2,Yes,0,Flow factor or constant used to calculate the valve coeff.,2,102084,1.02084e+06,0,0,VALVE.COEFF,GAL/MIN-PSI.5
+V G887 B,Yes,0.6,Exponent in the flow equation,2,1,1.1,0.51,0.51,NONE,
+V G887 C1,Yes,0,Flow Coeff. for valve from -CNC to +CNC,2,102084,1.02084e+06,0,0,VALVE.COEFF,GAL/MIN-PSI.5
+V G887 C2,Yes,17.5002,Flow coeff. for valve flow from +CNC to -CNC,2,102084,1.02084e+06,0,0,VALVE.COEFF,GAL/MIN-PSI.5
+V G887 DRA_DEG,Yes,100,DRA Degradation,2,100,100,0,0,DEGRADATION,PERCENT
+V G887 ET,Yes,0.2,A linearization parameter,2,0.3,0.4,0.1,0,NONE,
+V G887 PS0,Yes,689.473,Lowest value of sleeve pressure,2,40000,50000,6.89473,0,PRESSURE,KPAG
+V G887 PS1,Yes,6894.73,Highest value of sleeve pressure,2,40000,50000,6.89473,0,PRESSURE,KPAG
+V G887 PV,Yes,6.89473,Vapor pressure,2,10342.1,13789.5,6.89473,0,ABSOLUTE.PRESSURE,KPAA
+V G887 R,Yes,1,Critical ratio for cavitation,2,1.2,1.5,0.8,0.5,NONE,
+VISCOSITY TABLE SHEAR.RATE,No,0,Shear rate (table entry),2,200,500,0.5,0.1,SHEAR.RATE,1/SEC
+VISCOSITY TABLE TEMPERATURE,No,-17.7778,Temperature (table entry),2,48.8889,82.2222,3.19744e-14,-17.7778,TEMPERATURE,DC
+VISCOSITY TABLE VISCOSITY,No,0,Viscosity (table entry),2,200,500,1,0.5,VISCOSITY,CP
+WAX * DELTA.TEMP,Yes,0.555556,Delta temperature,2,2.77778,5.55556,-2.77778,-5.55556,DELTA.TEMP,DC
+WAX * DENS,Yes,897.034,Wax density,2,16018.5,32036.9,80.0923,48.0554,DENSITY,KG/M3
+WAX * DEPOSITION,Yes,0.1075,Wax deposition tendency,2,0.215,4.3,0,0,DEPOSITION,KG/KJ
+WAX * HCON,Yes,0.685333,Wax heat conductivity,2,12.4606,24.9212,0.062303,0,HEAT.COND,KJ/HR-M-DC
+WAX * MXR,Yes,2.54,Maximum pipe roughness with wax,2,25.4,25.4,0,0,ROUGHNESS,MM
+WAX * MXT,Yes,6.35,Maximum wax thickness,2,25.4,127,0,0,ROUGHNESS,MM
+WAX * REYNOLDS,Yes,2,Reynolds number,2,50000,100000,2000,1000,NONE,
+WAX * VELOCITY,Yes,0.6096,Fluid velocity,2,3.048,6.096,0.6096,0.3048,VELOCITY,M/S
+WAX * WALL.TEMP,Yes,15.5556,Wall temperature,2,37.7778,48.8889,4.44444,-6.66667,TEMPERATURE,DC

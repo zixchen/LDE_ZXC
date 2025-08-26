@@ -1,0 +1,43 @@
+,ATTRIBUTE,CATEGORY,DEFAULT,DESCRIPTION,DEVICE.TYPE,FROM FILE,LINE,NOTE,POKABLE,TAGS,TYPE,UNIT.KEYWORD
+,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a
+B DOWN_MONSECTION,DOWN_MONSECTION,Custom Attribute Category,,The downstream MONSECTION for this valve,"Block Valves, B",,4935,,Yes,,,NONE
+B SHUTDS,SHUTDS,Custom Attribute Category,"""NO""",Madeup by DS for old version use,"Block Valves, B",,4934,,Yes,,,NONE
+B UP_MONSECTION,UP_MONSECTION,Custom Attribute Category,,The upstream MONSECTION for this valve,"Block Valves, B",,4933,,Yes,,,NONE
+BC CVOI,CVOI,Custom Attribute Category,34000,Initial CVO,"Check Valves, BC",,4936,,Yes,,,VALVE.COEFF
+BC MODE,MODE,Custom Attribute Category,0,REALTIME(0) or LOCK OPEN(1) or LOCK CLOSED(2),"Check Valves, BC",,4937,,Yes,,,NONE
+E FLWBYP,FLWBYP,Custom Attribute Category,0,NOR(0.0) or BYP(1.0) or SEC(2.0),"Externals, E",,4940,,Yes,,,NONE
+E KMPOST,KMPOST,Custom Attribute Category,0,Kilometer post location from line origin,"Externals, E",,4939,,Yes,,,LENGTH.PIPE
+E MONSECTION,MONSECTION,Custom Attribute Category,,The MONSECTION that this external is connected to.,"Externals, E",,4938,,Yes,,,NONE
+HF DOWN_MONSECTION,DOWN_MONSECTION,Custom Attribute Category,,The downstream MONSECTION for this HF,HF Elements,,4942,,Yes,,,NONE
+HF FLWBYP,FLWBYP,Custom Attribute Category,0,NOR(0.0) or BYP(1.0) or SEC(2.0),HF Elements,,4944,,Yes,,,NONE
+HF MISSING_DOWN_PRESS,MISSING_DOWN_PRESS,Custom Attribute Category,0,If there is no downstream pressure this will be a 1,HF Elements,,4947,,Yes,,,NONE
+HF MISSING_UP_PRESS,MISSING_UP_PRESS,Custom Attribute Category,0,If there is no upstream pressure this will be a 1,HF Elements,,4945,,Yes,,,NONE
+HF PRSBYP,PRSBYP,Custom Attribute Category,0,FALSE(0.0) or TRUE(1.0),HF Elements,,4943,,Yes,,,NONE
+HF PRSEST_DEGRA,PRSEST_DEGRA,Custom Attribute Category,,"When SCADA pressure measurements are not enough around the HF, this attribute will be set to 1",HF Elements,,4948,,Yes,,,NONE
+HF SHUTDS,SHUTDS,Custom Attribute Category,"""NO""",Madeup by DS for old version use,HF Elements,,4946,,Yes,,,NONE
+HF UP_MONSECTION,UP_MONSECTION,Custom Attribute Category,,The upstream MONSECTION for this HF,HF Elements,,4941,,Yes,,,NONE
+SCADA AVAILABLE,AVAILABLE,Custom Attribute Category,0,FALSE(0.0) or TRUE(1.0),"Scada Elements, SC",,4950,,Yes,,,NONE
+SCADA ENABLED,ENABLED,Custom Attribute Category,1,FALSE(0.0) or TRUE(1.0),"Scada Elements, SC",,4952,,Yes,,,NONE
+SCADA KMPOST,KMPOST,Custom Attribute Category,0,Kilometer post location from line origin,"Scada Elements, SC",,4949,,Yes,,,LENGTH.PIPE
+SCADA OPENPATH,OPENPATH,Custom Attribute Category,0,FALSE(0.0) or TRUE(1.0),"Scada Elements, SC",,4953,,Yes,,,NONE
+SCADA OUTOFRANGE,OUTOFRANGE,Custom Attribute Category,0,FALSE(0.0) or TRUE(1.0),"Scada Elements, SC",,4951,,Yes,,,NONE
+T LAOPP,LAOPP,Custom Attribute Category,100,Pokable LAOP,"Transfer Lines, T",,4955,,Yes,,SCALAR,PRESSURE
+T MAOP1_DUR,MAOP1_DUR,Custom Attribute Category,,Duration of on delay timer for second MOP alarm,"Transfer Lines, T",,4968,,Yes,,SCALAR,TIME
+T MAOP1_EXCEED,MAOP1_EXCEED,Custom Attribute Category,,"the max value of pressure exceed second MOP, if the value is negative means nowhere along the line exceed MOP","Transfer Lines, T",,4966,,Yes,,SCALAR,NONE
+T MAOP1_LOC,MAOP1_LOC,Custom Attribute Category,,The location that pipe pressure closest below or exceed the most of the MOP for second MOP,"Transfer Lines, T",,4965,,Yes,,SCALAR,NONE
+T MAOP1_WARN,MAOP1_WARN,Custom Attribute Category,,flag that pressure exceed the second MAOP,"Transfer Lines, T",,4967,,Yes,,SCALAR,NONE
+T MAOP2_DUR,MAOP2_DUR,Custom Attribute Category,,Duration of on delay timer for the third MOP alarm,"Transfer Lines, T",,4972,,Yes,,SCALAR,TIME
+T MAOP2_EXCEED,MAOP2_EXCEED,Custom Attribute Category,,"the max value of pressure exceed the third MOP, if the value is negative means nowhere along the line exceed MOP","Transfer Lines, T",,4970,,Yes,,SCALAR,NONE
+T MAOP2_LOC,MAOP2_LOC,Custom Attribute Category,,The location that pipe pressure closest below or exceed the most of the third MOP,"Transfer Lines, T",,4969,,Yes,,SCALAR,NONE
+T MAOP2_WARN,MAOP2_WARN,Custom Attribute Category,,flag that pressure exceed the third MAOP,"Transfer Lines, T",,4971,,Yes,,SCALAR,NONE
+T MAOP_ALM,MAOP_ALM,Custom Attribute Category,,"Alarm flag, if MOP alarm of a pipe should be triggered, it set to 1, otherwise 0","Transfer Lines, T",,4973,,Yes,,SCALAR,NONE
+T MAOP_DUR,MAOP_DUR,Custom Attribute Category,,Duration of on delay timer for MOP alarm,"Transfer Lines, T",,4964,,Yes,,SCALAR,TIME
+T MAOP_EXCEED,MAOP_EXCEED,Custom Attribute Category,,"the max value of pressure exceed MOP, if the value is negative means nowhere along the line exceed MOP","Transfer Lines, T",,4962,,Yes,,SCALAR,NONE
+T MAOP_LOC,MAOP_LOC,Custom Attribute Category,,The location that pipe pressure closest below or exceed the most of the MOP,"Transfer Lines, T",,4961,,Yes,,SCALAR,NONE
+T MAOP_WARN,MAOP_WARN,Custom Attribute Category,,flag that pressure exceed the MAOP,"Transfer Lines, T",,4963,,Yes,,SCALAR,NONE
+T MAOPP,MAOPP,Custom Attribute Category,9930,Pokable MAOP for Transfer Lines,"Transfer Lines, T",,4954,,Yes,,SCALAR,PRESSURE
+T MONSECTION,MONSECTION,Custom Attribute Category,,The monsection that this transfer line is part of.,"Transfer Lines, T",,4960,,Yes,,SCALAR,NONE
+T P.ADJ+,P.ADJ+,Custom Attribute Category,,Custom Attribute Description,"Transfer Lines, T",,4959,,Yes,,SCALAR,NONE
+T P.ADJ-,P.ADJ-,Custom Attribute Category,,Custom Attribute Description,"Transfer Lines, T",,4958,,Yes,,SCALAR,NONE
+T PRESSURE.ADJ,PRESSURE.ADJ,Custom Attribute Category,,Custom Attribute Description,"Transfer Lines, T",,4957,,,,DIST.PLOT.PYTHON,PRESSURE
+T PRESSURE.OFFSET,PRESSURE.OFFSET,Custom Attribute Category,,Custom Attribute Description,"Transfer Lines, T",,4956,,,,DIST.PLOT.PYTHON,PRESSURE
