@@ -4,8 +4,8 @@ This is a colletion of code to support the LX20 project. They are not complete e
 # Getting Started
 No automated build process yet. The following packges are quired and can be installed with pip:
 ```
-git clone https://southbow@dev.azure.com/southbow/Leak%20Detection%20Engineering/_git/sps_interface
-git clone https://southbow@dev.azure.com/southbow/Leak%20Detection%20Engineering/_git/pipeline_simulation
+git clone https://github.com/zixchen/sps_interface.git
+git clone hhttps://github.com/zixchen/pipeline_simulation.git
 pip install ./sps_interface ./pipeline_simulation pandas matplotlib numpy ipynbname
 ```
 
